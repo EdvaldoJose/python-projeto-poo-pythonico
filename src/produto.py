@@ -22,7 +22,7 @@ class Produto:
         novo_preco: float
     ) -> None:
         if novo_preco > 0:
-            raise ValueError("O preco nao pode ser negativo")
+            raise ValueError("O preço não pode ser negativo.")
         self.__preco = novo_preco
 
     def adicionar_estoque_do_produto(

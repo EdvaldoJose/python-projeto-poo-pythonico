@@ -10,5 +10,3 @@ class Livro:
             f" de {self.autor}"
             f" possui {self.paginas} páginas."
         )
-
-
