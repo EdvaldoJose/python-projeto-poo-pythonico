@@ -18,7 +18,11 @@ class Estoque:
                 )
         self.produtos[nome] -= quantidade
 
-    def atualizar_produto_no_estoque(self, nome: str, nova_quantidade: int) -> None:
+    def atualizar_produto_no_estoque(
+        self,
+        nome: str,
+        nova_quantidade: int
+    ) -> None:
         if nome not in self.produtos:
             raise ValueError(f"Produto {nome} nao encontrado")
         self.produtos[nome] = nova_quantidade
