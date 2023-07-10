@@ -21,7 +21,7 @@ class Produto:
         self,
         novo_preco: float
     ) -> None:
-        if novo_preco > 0:
+        if novo_preco < 0:
             raise ValueError("O preço não pode ser negativo.")
         self.__preco = novo_preco
 
@@ -35,7 +35,7 @@ class Produto:
         self,
         quantidade: int
     ) -> None:
-        if self.__quantidade > quantidade:
+        if self.__quantidade < quantidade:
             raise ValueError("""
             Quantidade informada e maior que a quantidade,
             disponivel em estoque.
