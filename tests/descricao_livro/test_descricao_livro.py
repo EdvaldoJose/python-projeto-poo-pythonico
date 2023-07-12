@@ -3,7 +3,7 @@ from src.livro.livro import Livro
 
 def test_descricao_livro():
     titulo = "Pense em Python",
-    autor = "Pense em Python",
+    autor = "Edvaldojose",
     paginas = 309,
 
     livro = Livro(titulo, autor, paginas)
